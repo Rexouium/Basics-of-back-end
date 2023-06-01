@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Result</title>
+</head>
+<body>
+    <?php
+    function lijst_optellen($numbers) {
+        $sum = 0;
+
+        foreach ($numbers as $number) {
+            $sum += $number;
+        }
+
+        return $sum;
+    }
+
+    $getallenLijst = [1, 2, 3, 4];
+    $result = lijst_optellen($getallenLijst);
+
+    echo "The result is: " . $result;
+    ?>
+</body>
+</html>

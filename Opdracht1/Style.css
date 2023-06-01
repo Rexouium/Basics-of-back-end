@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    color: white;
+}
+
+#greeting {
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.morning{
+    background-image: url('morning.png');
+}
+
+.afternoon{
+    background-image: url('afternoon.png');
+}
+
+.evening{
+    background-image: url('evening.png');
+}
+
+.night{
+    background-image: url('night.png');
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamische Webpagina</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="greeting">
+        <?php
+        // Haal het huidige uur op
+        $hour = date('G');
+
+        // Bepaal het juiste begroeting en achtergrond afhankelijk van het uur
+        if ($hour >= 6 && $hour < 12) {
+            echo "<h1>Goede morgen</h1>";
+            echo "<img src='morning.png'>";
+        } elseif ($hour >= 12 && $hour < 18) {
+            echo "<h1>Goede middag</h1>";
+            echo "<img src='afternoon.png'>";
+        } elseif ($hour >= 18 && $hour < 24) {
+            echo "<h1>Goede avond</h1>";
+            echo "<img src='evening.png'>";
+        } else {
+            echo "<h1>Goede nacht</h1>";
+            echo "<img src='night.png'>";
+        }
+        ?>
+        <p>Huidige tijd: <?php echo date('H:i'); ?></p>
+    </div>
+</body>
+</html>
